@@ -3,37 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>FlashCards</title>
   </head>
   <body>
-    <h1>FlashCards</h1>
-    <div class="container">
-      <aside class="folders-section">
-        <h2>Pastas</h2>
-        <ul>
-            <li>Inglês</li>
-            <li>Espanhol</li>
-            <li>Francês</li>
-        </ul>
-      </aside>
-      <main class="main-section">
-        <div class="card">
-            <header>
-                <h2>Titulo</h2>
-            </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button class="answer">Ver resposta</button>
-          <footer>
-            <span>
-                icones
-            </span>
-            <span>
-                icones
-            </span>
-          </footer>
-        </div>
+    <main>
+      <header>
+        <h1>FlashCards</h1>
+        <button id="add-new-cards">Adicionar FlashCards</button>
+      </header>
+      <div class="container">
+        <aside class="folders-section">
+          <h2 class="filds">Pastas</h2>
+          <ul class="pages">
+            <li>
+              <a href="https://exemplo.com" class="page">Inglês</a>
+            </li>
+            <li>
+              <a href="https://exemplo.com" class="page">Espanhol</a>
+            </li>
+            <li>
+              <a href="https://exemplo.com" class="page">Francês</a>
+            </li>
+          </ul>
+        </aside>
+        <section>
+          <div class="cards-containers">
+            <div class="cards">
+              <div class="header-section">
+                <header class="title-section">
+                  <h2 class="title">Titulo</h2>
+                  <a class="icon-button" id="close-button">
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                </header>
+              </div>
+              <section class="card-section">
+                <textarea id="question" placeholder="Escreva a Pergunta">
+                </textarea>
+                <textarea
+                  id="answer"
+                  placeholder="Escreva a resposta"
+                ></textarea>
+                <div class="button-container">
+                  <button id="show-answer">Ver resposta</button>
+                </div>
+              </section>
+              <footer class="icon-section">
+                <a class="icon-button" id="edit-button">
+                  <i id="edit" class="fa-solid fa-pen"></i>
+                </a>
+                <a class="icon-button" id="add-button">
+                  <i id="add" class="fa-solid fa-plus"></i>
+                </a>
+                <a
+                  href="https://exemplo.com"
+                  class="icon-button"
+                  id="turn-button"
+                >
+                  <i id="turn" class="fa-solid fa-arrow-right"></i>
+                </a>
+              </footer>
+            </div>
+            <div class="cards">
+              <div class="header-section">
+                <header class="title-section">
+                  <h2 class="title">Titulo</h2>
+                  <a class="icon-button" id="close-button">
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                </header>
+              </div>
+              <section class="card-section">
+                <textarea id="question" placeholder="Escreva a Pergunta">
+                </textarea>
+                <textarea
+                  id="answer"
+                  placeholder="Escreva a resposta"
+                ></textarea>
+                <div class="button-container">
+                  <button id="show-answer">Ver resposta</button>
+                </div>
+              </section>
+              <footer class="icon-section">
+                <a class="icon-button" id="edit-button">
+                  <i id="edit" class="fa-solid fa-pen"></i>
+                </a>
+                <a class="icon-button" id="add-button">
+                  <i id="add" class="fa-solid fa-plus"></i>
+                </a>
+                <a
+                  href="https://exemplo.com"
+                  class="icon-button"
+                  id="turn-button"
+                >
+                  <i id="turn" class="fa-solid fa-arrow-right"></i>
+                </a>
+              </footer>
+            </div>
+            <div class="cards">
+              <div class="header-section">
+                <header class="title-section">
+                  <h2 class="title">Titulo</h2>
+                  <a class="icon-button" id="close-button">
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                </header>
+              </div>
+              <section class="card-section">
+                <textarea id="question" placeholder="Escreva a Pergunta">
+                </textarea>
+                <textarea
+                  id="answer"
+                  placeholder="Escreva a resposta"
+                ></textarea>
+                <div class="button-container">
+                  <button id="show-answer">Ver resposta</button>
+                </div>
+              </section>
+              <footer class="icon-section">
+                <a class="icon-button" id="edit-button">
+                  <i id="edit" class="fa-solid fa-pen"></i>
+                </a>
+                <a class="icon-button" id="add-button">
+                  <i id="add" class="fa-solid fa-plus"></i>
+                </a>
+                <a
+                  href="https://exemplo.com"
+                  class="icon-button"
+                  id="turn-button"
+                >
+                  <i id="turn" class="fa-solid fa-arrow-right"></i>
+                </a>
+              </footer>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    </div>
 
     <script src="/script.js"></script>
   </body>

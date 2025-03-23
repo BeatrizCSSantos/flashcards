@@ -1,0 +1,128 @@
+@import url("variables.css");
+
+body {
+  background: var(--tertiary-color);
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  gap: var(--gap);
+  color: var(--secundary-color);
+  margin-right: 5px;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  color: var(--secundary-color);
+  font-size: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  padding: var(--gap);
+  outline: none;
+  border-radius: var(--radius);
+  resize: none;
+  width: 350px;
+  font-family: var(--primary-font);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  margin-top: var(--height-space);
+  gap: 50px;
+}
+
+.cards-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: var(--border-color);
+  border-radius: var(--radius);
+  width: var(--width-space);
+  height: 208px;
+}
+
+.card-section {
+  display: grid;
+  width: var(--width-space);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.filds {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.icon-button {
+  color: var(--secundary-color);
+  margin-right: var(--gap);
+}
+.icon-button:hover {
+  color: var(--primary-color);
+}
+
+.page {
+  font-family: var(--primary-font);
+  color: var(--title-text-color);
+}
+
+.title {
+  font-family: var(--primary-font);
+  font-size: var(--size-title);
+  color: var(--title-text-color);
+  margin: 0px;
+  margin-left: var(--gap);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-section {
+  display: flex;
+  width: 100%;
+  height: var(--height-space);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px var(--border-color);
+}
+
+#add-new-cards {
+  font-family: var(--primary-font);
+}
+
+#add-new-cards,
+#show-answer {
+  font-family: var(--primary-font);
+  width: 250px;
+  background: var(--primary-color);
+  border-color: var(--secundary-color);
+  border-radius: var(--radius);
+  color: var(--strong-color-text);
+}

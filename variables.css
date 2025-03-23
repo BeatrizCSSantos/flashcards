@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+:root {
+  --primary-font: "Kode Mono", monospace;
+  --title-color: #90b78c;
+  --title-text-color: #53704e;
+  --text-color: #1e1e1e;
+  --primary-color: #90b78c;
+  --secundary-color: #95b99b;
+  --tertiary-color: #f0faf3;
+  --strong-color-text: #354d30;
+  --border-color: #afc6af;
+  --icon-color: #afc6af;
+  --size-title: 16px;
+  --size-text: 14px;
+  --space: 16px;
+  --radius: 4px;
+  --gap: 10px;
+  --width-space: 400px;
+  --height-space: 20px;
+}
