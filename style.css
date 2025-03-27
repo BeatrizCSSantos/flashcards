@@ -42,21 +42,17 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.container {
-  display: flex;
-  margin-top: var(--height-space);
-  gap: 50px;
+  margin-top: 5px;
 }
 
 .cards-containers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards {
+  margin-top: 10px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -64,15 +60,28 @@ textarea {
   border-color: var(--border-color);
   border-radius: var(--radius);
   width: var(--width-space);
-  height: 208px;
+  height: 210px;
 }
 
 .card-section {
   display: grid;
   width: var(--width-space);
+  height: 180px;
   align-items: center;
   justify-content: center;
   gap: var(--gap);
+}
+
+.flashcard {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: var(--border-color);
+  border-radius: var(--radius);
+  width: var(--width-space);
+  height: 210px;
 }
 
 .filds {
@@ -88,6 +97,11 @@ textarea {
   color: var(--primary-color);
 }
 
+.header-section {
+  display: flex;
+  justify-content: end;
+}
+
 .page {
   font-family: var(--primary-font);
   color: var(--title-text-color);
@@ -95,8 +109,9 @@ textarea {
 
 .title {
   font-family: var(--primary-font);
-  font-size: var(--size-title);
-  color: var(--title-text-color);
+  font-size: 50px;
+  font-weight: 200;
+  color: var(--title-color);
   margin: 0px;
   margin-left: var(--gap);
   display: flex;
@@ -104,13 +119,8 @@ textarea {
   justify-content: center;
 }
 
-.title-section {
-  display: flex;
-  width: 100%;
-  height: var(--height-space);
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: solid 2px var(--border-color);
+.text-label {
+  font-family: var(--primary-font);
 }
 
 #add-new-cards {
@@ -118,11 +128,18 @@ textarea {
 }
 
 #add-new-cards,
-#show-answer {
+#show-answer,
+#save-button {
   font-family: var(--primary-font);
   width: 250px;
   background: var(--primary-color);
   border-color: var(--secundary-color);
   border-radius: var(--radius);
   color: var(--strong-color-text);
+}
+
+#flashcards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
